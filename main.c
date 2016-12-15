@@ -1,8 +1,19 @@
-#include <stdio.h>//ÊÇÔ¤´¦ÀíÆ÷Ö¸Áî£¬¸æËß C ±àÒëÆ÷ÔÚÊµ¼Ê±àÒëÖ®Ç°Òª°üº¬ stdio.h ÎÄ¼ş¡£
+#include <stdio.h>//æ˜¯é¢„å¤„ç†å™¨æŒ‡ä»¤ï¼Œå‘Šè¯‰ C ç¼–è¯‘å™¨åœ¨å®é™…ç¼–è¯‘ä¹‹å‰è¦åŒ…å« stdio.h æ–‡ä»¶ã€‚
 #include <float.h>
-#include <print.h>
+#include <stdlib.h>
+#include "hello.h"
+#include "length.h"
+#include "input.h"
+#include "array.h"
+#include "structs.h"
+#include "dynicMemory.h"
+#include "memoryAddr.h"
+#include "testStudent.h"
+#include "cycle.h"
+#include "pointer.h"
+#include "funAddr.h"
 
-// ±äÁ¿ÉùÃ÷
+// å˜é‡å£°æ˜
 extern int a, b;
 extern int c;
 extern float f;
@@ -13,21 +24,28 @@ extern float f;
 
 void testExtern();
 
-void testSizeOf();
-
 void testCharacter();
 
 void testConst();
 
 int main()
 {
-    printHello();
-    /* this is my first c program */
-    printf("Hello, World! \n");
+    funAddr();
+//    pointer();
+//    cycle();
+//    testMemoryAddr();
+//    testStudent();
+//    testDynicMemory();
+//    testArray();
+//    testInput();
+//    testStructs();
+//    fun();
 //    testSizeOf();
-    testExtern();
-    testCharacter();
-    testConst();
+    /* this is my first c program */
+//    printf("Hello, World! \n");
+//    testExtern();
+//    testCharacter();
+//    testConst();
 
     return 0;
 }
@@ -42,20 +60,13 @@ void testConst() {
 
 void testCharacter() { printf("Hello\tWorld\n\n"); }
 
-void testSizeOf() {
-    printf("int ´æ´¢´óĞ¡ : %lu \n", sizeof(int));
-    printf("float ´æ´¢×î´ó×Ö½ÚÊı : %lu \n", sizeof(float));
-    printf("float ×îĞ¡Öµ: %E\n", FLT_MIN );
-    printf("float ×î´óÖµ: %E\n", FLT_MAX );
-    printf("¾«¶ÈÖµ: %d\n", FLT_DIG );
-}
 
-void testExtern() {/* ±äÁ¿¶¨Òå */
+void testExtern() {/* å˜é‡å®šä¹‰ */
     int a, b;
     int c;
     float f;
 
-    /* ³õÊ¼»¯ */
+    /* åˆå§‹åŒ– */
     a = 10;
     b = 20;
 
