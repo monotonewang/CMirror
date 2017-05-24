@@ -30,11 +30,11 @@ void testConst();
 
 int main()
 {
-    funAddr();
+//    funAddr();
 //    pointer();
 //    cycle();
 //    testMemoryAddr();
-//    testStudent();
+    testStudent();
 //    testDynicMemory();
 //    testArray();
 //    testInput();
