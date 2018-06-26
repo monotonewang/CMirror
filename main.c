@@ -14,6 +14,7 @@
 #include "imporve/socketclient/socketclient.h"
 #include "imporve/chooseSort/chooseSort.h"
 #include "imporve/sizeof/sizeOf.h"
+#include "imporve/testvariable/testVariable.h"
 
 // 变量声明
 extern int a, b;
@@ -30,15 +31,26 @@ void testCharacter();
 
 void testConst();
 
+
 int main() {
-
-
 
 
 //    int a[] = {10, 9, 2, 1, 9, 4, 3, 2, 0};
 //    sortArray(a, sizeof(a)/ sizeof(a[0]));
 
-    testSizeOf();
+//    testSizeOf();
+
+    testVariable();
+
+    //两个地址一致
+    char *a=testGlobal();
+    printf("a%s=%d\n",&a,a);
+    char *p=testGlobal2();
+
+    printf("p%s=%d\n",&p,p);
+    char *q=testGlobal3();
+
+    printf("q%s=%d\n",&q,q);
 
 //    funAddr();
 
@@ -62,6 +74,8 @@ int main() {
 
     return 0;
 }
+
+
 
 void testConst() {
     int area;

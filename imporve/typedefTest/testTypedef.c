@@ -30,7 +30,6 @@ void testTypedef() {
     //定义结构体变量，一定要加上struct关键字
     struct MyStruct m1;
 
-    struct TMP mx;
 
     //省略了 struct
     TMP m2;
