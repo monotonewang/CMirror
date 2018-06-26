@@ -2,16 +2,18 @@
 #include <float.h>
 #include <stdlib.h>
 #include "hello.h"
-#include "length.h"
 #include "input.h"
 #include "array.h"
 #include "structs.h"
 #include "dynicMemory.h"
 #include "memoryAddr.h"
 #include "testStudent.h"
-#include "cycle.h"
+#include "imporve/cycle.h"
 #include "pointer.h"
 #include "funAddr.h"
+#include "imporve/socketclient/socketclient.h"
+#include "imporve/chooseSort/chooseSort.h"
+#include "imporve/sizeof/sizeOf.h"
 
 // 变量声明
 extern int a, b;
@@ -28,13 +30,24 @@ void testCharacter();
 
 void testConst();
 
-int main()
-{
+int main() {
+
+
+
+
+//    int a[] = {10, 9, 2, 1, 9, 4, 3, 2, 0};
+//    sortArray(a, sizeof(a)/ sizeof(a[0]));
+
+    testSizeOf();
+
 //    funAddr();
+
+//    socket_init();
+
 //    pointer();
 //    cycle();
 //    testMemoryAddr();
-    testStudent();
+//    testStudent();
 //    testDynicMemory();
 //    testArray();
 //    testInput();

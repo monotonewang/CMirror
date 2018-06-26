@@ -3,5 +3,5 @@ project(CMirror)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.c)
+set(SOURCE_FILES main.c imporve/socketclient/socketclient.c imporve/socketclient/socketclient.h imporve/socketclient/socketclient.h imporve/socketclient/socketclient.c imporve/chooseSort/chooseSort.h imporve/chooseSort/chooseSort.c imporve/sizeof/sizeOf.h imporve/sizeof/sizeOf.c imporve/typedefTest/testTypedef.h imporve/typedefTest/testTypedef.c)
 add_executable(CMirror ${SOURCE_FILES})

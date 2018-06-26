@@ -1,3 +1,10 @@
+//
+// Created by wang on 2018/6/26.
+//
+
+#include <printf.h>
+#include <float.h>
+#include <stdlib.h>
 
 void testSizeOf() {
     printf("int 存储大小 : %lu \n", sizeof(int));
