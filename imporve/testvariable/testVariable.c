@@ -6,6 +6,23 @@
 #include <memory.h>
 #include <stdlib.h>
 
+void defineVariable(){
+    int a, b;
+    int c;
+    float f;
+
+    /* 初始化 */
+    a = 10;
+    b = 20;
+
+    c = a + b;
+    printf("value of c : %d \n", c);
+
+    f = (float) (70.0 / 3.0);
+    printf("value of f : %f \n", f);
+}
+
+
 void testVariable() {
     int a;
     a = 10;
@@ -47,6 +64,11 @@ char *getStr() {
 
 char *getStr2(){
     char *temp=(char *)malloc(100);
+    char *temp2=(char *)malloc(100);
+
+    //存储是从低地址到高地址生长
+    printf("temp=%d---temp2=%d\n", &temp,&temp2);
+
     if(temp==NULL){
         return NULL;
     }
@@ -82,6 +104,12 @@ void testHeap() {
 void testStack() {
     char buf[128] = {0};
 
+
+    //存储是从高地址到低地址生长
+    int a=10;
+    int b=10;
+
+    printf("a=%d---d=%d\n", &a,&b);
     char newBuf[] = {0};
     char *p = NULL;
     p = getStr();//getStr()执行完，空间回收，出现乱码。

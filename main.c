@@ -3,18 +3,13 @@
 #include <stdlib.h>
 #include "hello.h"
 #include "input.h"
-#include "array.h"
-#include "structs.h"
-#include "dynicMemory.h"
-#include "memoryAddr.h"
-#include "testStudent.h"
-#include "imporve/cycle.h"
-#include "pointer.h"
-#include "funAddr.h"
+#include "imporve/testArray/cycle.h"
 #include "imporve/socketclient/socketclient.h"
 #include "imporve/chooseSort/chooseSort.h"
 #include "imporve/sizeof/sizeOf.h"
-#include "imporve/testvariable/testVariable.h"
+#include "imporve/testvariable/chooseSort.h"
+#include "imporve/testStatic/testStatic.h"
+#include "imporve/testPointer/testPointer.h"
 
 // 变量声明
 extern int a, b;
@@ -25,7 +20,6 @@ extern float f;
 #define WIDTH  5
 #define NEWLINE '\n'
 
-void testExtern();
 
 void testCharacter();
 
@@ -54,7 +48,16 @@ int main() {
 
 //    testStack();
 
-    testHeap();
+//    testHeap();
+    freePointer();
+//    testPointer();
+//    testMemCpy();
+
+
+
+//    int *a=getA();
+
+//    printf("a=%d--%d",a,&a);
 
 //    funAddr();
 
@@ -89,21 +92,5 @@ void testConst() {
     printf("%c", NEWLINE);
 }
 
-void testCharacter() { printf("Hello\tWorld\n\n"); }
 
 
-void testExtern() {/* 变量定义 */
-    int a, b;
-    int c;
-    float f;
-
-    /* 初始化 */
-    a = 10;
-    b = 20;
-
-    c = a + b;
-    printf("value of c : %d \n", c);
-
-    f = (float) (70.0 / 3.0);
-    printf("value of f : %f \n", f);
-}

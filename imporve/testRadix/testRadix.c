@@ -1,7 +1,11 @@
-#include <stdio.h>
+//
+// Created by wang on 2018/6/27.
+//
+
+#include <printf.h>
 #include <stdlib.h>
 
-void testMemoryAddr() {
+void testRadix(){
     int i;
     i = 4;
     printf("%#x\n", &i);//打印地址

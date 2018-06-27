@@ -1,3 +1,19 @@
+//
+// Created by wang on 2018/6/27.
+//
+
+#include <printf.h>
+#include <stdlib.h>
+
+void testCharacter() { printf("Hello\tWorld\n\n"); }
+
+
+int fun(){
+    printf("hello world\n");
+    system("pause");
+    return 0;
+};
+
 int testInput() {
     printf("请输入班级的人数：\n");
     int number;

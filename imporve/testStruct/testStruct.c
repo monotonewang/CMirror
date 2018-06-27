@@ -1,9 +1,12 @@
-#include <stdio.h>
-#include <stdlib.h>
-//#include <malloc.h>
+//
+// Created by wang on 2018/6/27.
+//
 
-void testStudent()
-{
+
+#include <printf.h>
+#include <stdlib.h>
+
+void testStudent(){
 
     printf("请输入学生人数：\n");
     int count;
@@ -23,5 +26,19 @@ void testStudent()
         printf("第%d个学生的学号是：%d\n",i,*(p+i));
     }
 
+    system("pause");
+}
+
+
+struct student {
+    int age;
+    int height;
+    char sex;
+};
+
+void testStructs() {
+    struct student st = {20, 180, 'n'};
+    printf("%d\n", st.age);
+    printf("%d\n", sizeof(st));
     system("pause");
 }
