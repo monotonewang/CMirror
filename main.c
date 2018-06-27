@@ -40,17 +40,21 @@ int main() {
 
 //    testSizeOf();
 
-    testVariable();
+//    testVariable();
 
     //两个地址一致
-    char *a=testGlobal();
-    printf("a%s=%d\n",&a,a);
-    char *p=testGlobal2();
+//    char *a=testGlobal();
+//    printf("a%s=%d\n",&a,a);
+//    char *p=testGlobal2();
+//
+//    printf("p%s=%d\n",&p,p);
+//    char *q=testGlobal3();
+//
+//    printf("q%s=%d\n",&q,q);
 
-    printf("p%s=%d\n",&p,p);
-    char *q=testGlobal3();
+//    testStack();
 
-    printf("q%s=%d\n",&q,q);
+    testHeap();
 
 //    funAddr();
 

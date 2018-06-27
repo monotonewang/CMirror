@@ -16,5 +16,9 @@ char *testGlobal2();
 
 char *testGlobal3();
 
+void testStack();
+
+void testHeap();
+
 
 #endif //CMIRROR_TESTVARIABLE_H
