@@ -3,15 +3,38 @@ C 语言标识符
     C 标识符内不允许出现标点字符，比如 @、$ 和 %。C 是区分大小写的编程语言。因此，在 C 中，Manpower 和 manpower 是两个不同的标识符。下面列出几个有效的标识符：
 ****************************************
 C语言关键字
-auto	else	long	switch
-break	enum	register	typedef
-case	extern	return	union
-char	float	short	unsigned
-const	for	signed	void
-continue	goto	sizeof	volatile
-default	if	static	while
-do	int	struct	_Packed
-double
+auto	 声明自动变量
+else	 条件语句否定分支（与 if 连用
+long	 声明长整型变量或函数返回值类型
+switch   用于开关语句
+break	 跳出当前循环
+enum	 声明枚举类型
+register 声明寄存器变量
+typedef  用以给数据类型取别名
+case	 开关语句分支
+extern	 声明变量或函数是在其它文件或本文件的其他位置定义
+return	 子程序返回语句（可以带参数，也可不带参数）
+union    声明共用体类型
+char     声明字符型变量或函数返回值类型
+float	 声明浮点型变量或函数返回值类型
+short	 声明短整型变量或函数
+unsigned 声明无符号类型变量或函数
+const    声明只读变量
+for	     一种循环语句
+signed	 声明有符号类型变量或函数
+void     声明函数无返回值或无参数，声明无类型指针
+continue 结束当前循环，开始下一轮循环
+goto     无条件跳转语句
+sizeof	 计算数据类型或变量长度（即所占字节数）
+volatile 说明变量在程序执行中可被隐含地改变
+default  开关语句中的"其它"分支
+if	     条件语句
+static	 声明静态变量
+while    循环语句的循环条件
+do	     循环语句的循环体
+int	     声明整型变量或函数
+struct	 声明结构体类型
+double   声明双精度浮点型变量或函数返回值类型
 ***************************************
 C 语言数据类型
 在 C 语言中，数据类型指的是用于声明不同类型的变量或函数的一个广泛的系统。变量的类型决定了变量存储占用的空间，以及如何解释存储的位模式。
