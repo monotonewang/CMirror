@@ -8,6 +8,8 @@
 #include "imporve/testvariable/chooseSort.h"
 #include "imporve/testStatic/testStatic.h"
 #include "imporve/testPointer/testPointer.h"
+#include "imporve/testConstant/testConstant.h"
+#include "imporve/testArray/testArray.h"
 
 // 变量声明
 extern int a, b;
@@ -26,6 +28,8 @@ void testConst();
 
 int main() {
 
+
+    testInitArray();
 
 //    int a[] = {10, 9, 2, 1, 9, 4, 3, 2, 0};
 //    sortArray(a, sizeof(a)/ sizeof(a[0]));
@@ -48,7 +52,9 @@ int main() {
 
 //    testHeap();
 //    freePointer();
-    testSecondPointerValue();
+//    testSecondPointerValue();
+
+    testConstant();
 //    testPointer();
 //    testMemCpy();
 

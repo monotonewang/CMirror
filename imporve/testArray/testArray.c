@@ -4,6 +4,7 @@
 
 #include <printf.h>
 #include <stdlib.h>
+#include <memory.h>
 
 void testArray() {
     //	char arr[20] ="hello";
@@ -12,4 +13,12 @@ void testArray() {
     printf("%#x\n", &arr[1]);
     printf("%#x\n", &arr[2]);
     system("pause");
+}
+
+void testInitArray() {
+    char buf8[]="adfafdsafda";
+    printf("strlen=%d,sizeOf=%d\n",strlen(buf8), sizeof(buf8));
+
+    char buf9[100]="dfsadfasfaf";
+    printf("strlen=%d,sizeOf=%d\n",strlen(buf9), sizeof(buf9));
 }

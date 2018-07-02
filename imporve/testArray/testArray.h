@@ -8,5 +8,6 @@
 
 void testArray();
 
+void testInitArray();
 
 #endif //CMIRROR_TESTARRAY_H
