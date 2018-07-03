@@ -2,10 +2,9 @@
 #include <float.h>
 #include <stdlib.h>
 #include "imporve/testArray/cycle.h"
-#include "imporve/socketclient/socketclient.h"
+#include "imporve/socketClients/socketclient.h"
 #include "imporve/chooseSort/chooseSort.h"
-#include "imporve/sizeof/sizeOf.h"
-#include "imporve/testvariable/chooseSort.h"
+#include "imporve/testVariables/chooseSort.h"
 #include "imporve/testStatic/testStatic.h"
 #include "imporve/testPointer/testPointer.h"
 #include "imporve/testConstant/testConstant.h"
@@ -28,8 +27,8 @@ void testConst();
 
 int main() {
 
-
-    testInitArray();
+    testStrstr();
+//    testInitArray();
 
 //    int a[] = {10, 9, 2, 1, 9, 4, 3, 2, 0};
 //    sortArray(a, sizeof(a)/ sizeof(a[0]));
@@ -54,7 +53,7 @@ int main() {
 //    freePointer();
 //    testSecondPointerValue();
 
-    testConstant();
+//    testConstant();
 //    testPointer();
 //    testMemCpy();
 

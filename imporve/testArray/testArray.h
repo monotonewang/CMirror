@@ -10,4 +10,6 @@ void testArray();
 
 void testInitArray();
 
+void testStrstr();
+
 #endif //CMIRROR_TESTARRAY_H
