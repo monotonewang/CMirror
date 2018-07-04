@@ -27,7 +27,9 @@ void testConst();
 
 int main() {
 
-    testStrstr();
+    testConstant();
+
+//    testStrstr();
 //    testInitArray();
 
 //    int a[] = {10, 9, 2, 1, 9, 4, 3, 2, 0};
