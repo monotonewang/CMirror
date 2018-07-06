@@ -25,10 +25,11 @@ void testCharacter();
 void testConst();
 
 
-int main() {
+//int main() {
 
-    testConstant();
 
+//    testSecondPointerArray();
+//    testSecondArray();
 //    testStrstr();
 //    testInitArray();
 
@@ -85,8 +86,8 @@ int main() {
 //    testCharacter();
 //    testConst();
 
-    return 0;
-}
+//    return 0;
+//}
 
 
 

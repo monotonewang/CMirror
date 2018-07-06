@@ -1,0 +1,58 @@
+英文字母：A-Z,a-z
+数字字符：0-9
+特殊字符：！  #  %  ^  &  *  _   +
+         =  -  ~  <  >  /  \   /
+         "  ;  .  ,  :  ?  (   )
+         [  ]  {  }
+
+关键字:
+  asm auto bool break case catch char
+  class const const_cast continue default delete do
+  double dynammic_cast else enum explicit export extren
+  false float for friend goto if inline
+  int long mutable namespace new operator private
+  protected public register reinterpret_cast return short signed
+  sizeof static static_cast struct switch  temlate this
+  throw true try typedef typeid typename union
+  unsigned using virtual void volatile wchar_t while
+
+
+  C++ 语言标准整数型存储大小
+  下表列出了关于标准整数类型的存储大小和值范围的细节：
+  类型	存储大小	值范围
+  bool          1 字节       bfalse或true
+  char	        1 字节	     -128 到 127 或 0 到 255
+  unsigned char	1 字节	     0 到 255
+  signed char 	1 字节    	 -128 到 127
+  int	            2 或 4 字节	 -32,768 到 32,767 或 -2,147,483,648 到 2,147,483,647
+  unsigned int	2 或 4 字节	 0 到 65,535 或 0 到 4,294,967,295
+  short	        2 字节	     -32,768 到 32,767
+  unsigned short	2 字节	     0 到 65,535
+  long	        4 字节        -2,147,483,648 到 2,147,483,647
+  unsigned long	4 字节	     0 到 4,294,967,295
+
+  浮点类型
+  下表列出了关于标准浮点类型的存储大小、值范围和精度的细节：
+  类型	存储大小	值范围	精度
+  float	        4 字节	    1.2E-38 到 3.4E+38	    6 位小数
+  double	        8 字节	    2.3E-308 到 1.7E+308	    15 位小数
+  long double	    16 字节	    3.4E-4932 到 1.1E+4932	19 位小数
+
+转义序列
+
+\a	警报铃声
+\n	换行符
+\t	水平制表符
+\v	垂直制表符
+\b	退格键
+\f	换页符
+\r	回车
+\\	\ 字符
+\'	' 字符
+\"	" 字符
+\?	? 字符
+
+隐含装换
+左边低右边高
+char short int unsigned long unsigned long float double
+

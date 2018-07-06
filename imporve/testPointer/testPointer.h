@@ -14,6 +14,10 @@ void testMemCpy();
 void freePointer();
 
 void testSecondPointerValue();
+
+void testSecondPointerArray();
+
+void testSecondArray();
 //void fun2(int *p);
 
 #endif //CMIRROR_TESTPOINTER_H
