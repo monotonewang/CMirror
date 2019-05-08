@@ -2,6 +2,7 @@
 // Created by wang on 2018/6/27.
 //
 
+https://buyertrade.taobao.com/trade/itemlist/list_bought_items.htm?spm=a21bo.2017.1997525045.2.5af911d9vnZlZR
 #include <printf.h>
 #include <stdlib.h>
 

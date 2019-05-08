@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "choosesort.h": "c",
+        "testpointer.h": "c",
+        "testconstant.h": "c",
+        "testarray.h": "c"
+    }
+}
