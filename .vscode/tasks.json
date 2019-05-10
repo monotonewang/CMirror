@@ -10,6 +10,11 @@
                 "${workspaceFolder}/imporve/testArray/testArray.c",
                 "${workspaceFolder}/imporve/testVariables/testVariable.c",
                 "${workspaceFolder}/imporve/testPointer/testPointer.c",
+                "${workspaceFolder}/imporve/testChar/testChar.c",
+                "${workspaceFolder}/imporve/testStruct/testStruct.c",
+                "${workspaceFolder}/imporve/testUnion/testUnion.c",
+                "${workspaceFolder}/imporve/testFile/testFile.c",
+                "${workspaceFolder}/imporve/typedefTest/testTypedef.c",
                 "-o",
                 "${workspaceFolder}/a.out"
             ],

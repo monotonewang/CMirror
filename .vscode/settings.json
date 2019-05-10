@@ -3,6 +3,15 @@
         "choosesort.h": "c",
         "testpointer.h": "c",
         "testconstant.h": "c",
-        "testarray.h": "c"
-    }
+        "testarray.h": "c",
+        "stdlib.h": "c",
+        "testchar.h": "c",
+        "printf.h": "c",
+        "string.h": "c",
+        "__config": "cpp",
+        "memory": "c",
+        "testunion.h": "c",
+        "testfile.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
 }

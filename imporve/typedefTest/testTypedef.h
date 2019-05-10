@@ -7,4 +7,6 @@
 
 void testTypedef();
 
+void testDefine();
+
 #endif //CMIRROR_TESTTYPEDEF_H

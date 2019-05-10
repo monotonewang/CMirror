@@ -10,6 +10,26 @@ void printArray();
 
 void printArrays(char *pString[2], int n);
 
+//指针数组
+void testPointerArray(){
+    const int MAX=3;
+    int var[]={10,20,30};
+    int i,*ptr[MAX];
+    for(int i=0;i<MAX;i++){
+        ptr[i]=&var[i];
+    }
+    for(int i=0;i<MAX;i++){
+        printf("Value of var[%d] =%d-address-%p--%d\n",i,*ptr[i],ptr[i],ptr[i]);
+    }
+
+    printf("this is testPointerArray end\n");
+
+    printf("int 存储大小 : %lu \n", sizeof(int));
+    // printf(strlen(MAX)));
+    // 指针存储的是8个字节，所以这里是24
+    printf("ptr 存储大小 : %lu \n",sizeof(ptr));
+}
+//释放指针
 void freePointer()
 {
     //	char arr[20] ="hello";
@@ -107,64 +127,39 @@ void testSecondPointerArray()
     printf("sizeOf n=%d,npLength=%d,alength=%d\n", n, npLength, alength);
 }
 
-void testSecondArray()
-{
-    //遍历二位数组
-    int a2[3][4] = {
-        {0, 1, 2, 3},  /*  初始化索引号为 0 的行 */
-        {4, 5, 6, 7},  /*  初始化索引号为 1 的行 */
-        {8, 9, 10, 11} /*  初始化索引号为 2 的行 */
-    };
-
-    int i, j;
-
-    /* 输出数组中每个元素的值 */
-    for (i = 0; i < 3; i++)
-    {
-        for (j = 0; j < 4; j++)
-        {
-            printf("a[%d][%d] = %d\n", i, j, a2[i][j]);
-        }
-    }
-
-    //4个 a[30]的一维数组
-    char a[4][30] = {"aaaaa", "111111", "bbbbbbbbbbb"};
-    int alength = sizeof(a) / sizeof(a[0]);
-
-    printf("a=%d\n,a+1=%d\n", a, a + 1);   //30 首行和 首元素区别
-    printf("a=%d\n,a+1=%d\n", &a, &a + 1); //120
-    for (int i = 0; i < alength; i++)
-    { //遍历数组
-        printf("child=%s\n", a[i]);
-    }
-}
-
+//指针的基本概念
 void testPointer()
 {
-
     int a = 0;
     int *p;
-
-    printf("a=%d\n", a);
-
+    printf("a变量的值=%d\n", a);
+    printf("a变量的地址=%d\n", &a);
     p = &a;
-
     *p = 22;
-
     printf("after a=%d\n", a);
+    printf("&a 的地址 =%p\n", &a);
+    // 这是p存的地址
+    printf("p 指向的地址=%p\n", p);
+    //这是 p内存真实的地址
+    printf("p 指针的地址=%p\n", &p);
 
     //读内存操作
     printf("p=%d\n", *p);
 }
-
+//二级指针
 void testSecondPointer()
 {
+
+// %x是16进制输出.
+// %8x是输出8位
+// %#x是带格式输出, 效果为在输出前加0x.
 
     int  *ptr = NULL;
 
    printf("ptr 的值是 %x\n", ptr  );
 
     int i = 3;
+    i=200012;
     //定义一个保存int类型数据的指针,p中存放内存地址，地址所放的数据是int类型的
     int *p = &i;
     //二级指针
@@ -172,21 +167,31 @@ void testSecondPointer()
     printf("i的地址%#x\n", p);
     //取出p中地址存放的数据
     printf("i的值%#x\n", *p);
+    //下面
     printf("q的存放地址%#x\n", *q);
+    printf("q的存放地址%p\n", *q);
+    printf("q的存放地址%lu\n", *q);
+    printf("q的存放地址%d\n", *q);
+
+    //下面都是取值只不过表达的方式不一样
     printf("q的值%#x\n", **q);
+    printf("q的值%x\n", **q);
+    printf("q的值%lu\n", **q);
+    printf("q的值%d\n", **q);
     system("pause");
 }
 
 void fun2(int *pq)
 {
-    pq = (int *)0xaaaa;
-    printf("fun2 b%p=\n", pq);
+     /* 获取当前的秒数 */
+    pq = (int *)time( NULL );
+    printf("fun2 b=%p\n", pq);
 }
 
 void fun3(int *pq)
 {
     *pq = (int)(int *)0xaaaa;
-    printf("fun3 b%p=\n", *pq);
+    printf("fun3 b=%p\n", *pq);
 }
 
 /**

@@ -12,4 +12,6 @@ void testInitArray();
 
 void testStrstr();
 
+void testSecondArray();
+
 #endif //CMIRROR_TESTARRAY_H

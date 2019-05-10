@@ -6,6 +6,14 @@
 #include <printf.h>
 #include <stdlib.h>
 
+
+void testStructPoint(){
+    struct student *xiaomiao;
+
+}
+
+
+
 void testStudent(){
 
     printf("请输入学生人数：\n");
@@ -31,14 +39,36 @@ void testStudent(){
 
 
 struct student {
+    char address[100];
     int age;
     int height;
     char sex;
 };
 
+typedef struct Books{
+    char title[50];
+}Book;
+
+//通过指针来传递 结构体，注：结构体的声明必须在该方法前面
+void printStudent(struct student * s_student){
+    printf("printStudent address %s\n",s_student->address);
+    
+}
+
 void testStructs() {
-    struct student st = {20, 180, 'n'};
+   char greeting[6] = "hellocdsdsa\0";
+
+    printf("%s xx=",greeting);
+
+    char address[100]="china";
+
+    struct student st = {"china",20, 180, 'n'};
+
+    printf("this is =%s\n", st.address);
     printf("%d\n", st.age);
     printf("%d\n", sizeof(st));
-    system("pause");
+
+    printStudent(&st);
+
+    // system("pause");
 }

@@ -144,3 +144,25 @@ sizeof()	返回变量的大小。	sizeof(a) 将返回 4，其中 a 是整数。
 &	返回变量的地址。	&a; 将给出变量的实际地址。
 *	指向一个变量。	*a; 将指向一个变量。
 ? :	条件表达式	如果条件为真 ? 则值为 X : 否则值为 Y
+
+//优先级
+从低到高
+int 
+unsigned int 
+long
+unsigned long 
+long long 
+unsigned long long 
+float 
+double 
+long double
+
+c 内存管理
+1	void *calloc(int num, int size);
+该函数分配一个带有 function allocates an array of num 个元素的数组，每个元素的大小为 size 字节。
+2	void free(void *address); 
+该函数释放 address 所指向的h内存块。
+3	void *malloc(int num); 
+该函数分配一个 num 字节的数组，并把它们进行初始化。
+4	void *realloc(void *address, int newsize); 
+该函数重新分配内存，把内存扩展到 newsize。

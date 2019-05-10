@@ -17,6 +17,19 @@ typedef struct MyStruct2 {
     short b;
 } TMP;
 
+int square(int x){
+    return x*x;
+}
+//使用宏定义和上面效果一致。
+#define square(x) (x*x)
+
+void testDefine(){
+    printf("File :%s\n", __FILE__ );
+   printf("Date :%s\n", __DATE__ );
+   printf("Time :%s\n", __TIME__ );
+   printf("Line :%d\n", __LINE__ );
+   printf("ANSI :%d\n", __STDC__ );
+}
 /**
  * void，无类型
  * 1.函数参数为空，可以用void修饰

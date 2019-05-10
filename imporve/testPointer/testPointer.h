@@ -7,6 +7,8 @@
 #ifndef CMIRROR_TESTPOINTER_H
 #define CMIRROR_TESTPOINTER_H
 
+//指针数组
+void testPointerArray();
 
 void testPointer();
 void testMemCpy();
@@ -17,7 +19,6 @@ void testSecondPointerValue();
 
 void testSecondPointerArray();
 
-void testSecondArray();
 //void fun2(int *p);
 
 #endif //CMIRROR_TESTPOINTER_H

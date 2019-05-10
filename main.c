@@ -9,6 +9,11 @@
 #include "imporve/testPointer/testPointer.h"
 #include "imporve/testConstant/testConstant.h"
 #include "imporve/testArray/testArray.h"
+#include "imporve/testChar/testChar.h"
+#include "imporve/testStruct/testStruct.h"
+#include "imporve/testUnion/testUnion.h"
+#include "imporve/testFile/testFile.h"
+#include "imporve/typedefTest/testTypedef.h"
 
 // 变量声明
 extern int a, b;
@@ -28,7 +33,7 @@ int main(int argc, char **argv)
 
     // testArray();
     //    testSecondPointerArray();
-    testSecondPointer();
+    // testSecondPointer();
     //    testSecondArray();
     //    testStrstr();
     //    testInitArray();
@@ -55,9 +60,11 @@ int main(int argc, char **argv)
     //    testHeap();
     //    freePointer();
     //    testSecondPointerValue();
-
+// testSecondPointer();
     //    testConstant();
     //    testPointer();
+       
+        //   testPointerArray();
     //    testMemCpy();
 
     //    int *a=getA();
@@ -83,6 +90,11 @@ int main(int argc, char **argv)
     //    testExtern();
     //    testCharacter();
     //    testConst();
+    // testChars();
+
+        // testUnions();
+        testFiles();
+        // testDefine();
 
     return 0;
 }
