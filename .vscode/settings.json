@@ -11,7 +11,9 @@
         "__config": "cpp",
         "memory": "c",
         "testunion.h": "c",
-        "testfile.h": "c"
+        "testfile.h": "c",
+        "stdio.h": "c",
+        "testvariable.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

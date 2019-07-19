@@ -6,6 +6,13 @@
 #include <memory.h>
 #include <stdlib.h>
 
+//char int short long
+//long long
+//unsigned chart
+//unsigned int
+//unsigned short
+//unsigned long
+//unsigned long long
 void defineVariable()
 {
     int a, b;
