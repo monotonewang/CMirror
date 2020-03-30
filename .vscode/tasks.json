@@ -1,45 +1,28 @@
 {
-    "tasks": [
-        {
-            "type": "shell",
-            "label": "clang build active file",
-            "command": "/usr/bin/clang",
-            "args": [
-                "-g",
-                "${workspaceFolder}/main.c",
-                "${workspaceFolder}/imporve/testArray/testArray.c",
-                "${workspaceFolder}/imporve/testVariables/testVariable.c",
-                "${workspaceFolder}/imporve/testPointer/testPointer.c",
-                "${workspaceFolder}/imporve/testChar/testChar.c",
-                "${workspaceFolder}/imporve/testStruct/testStruct.c",
-                "${workspaceFolder}/imporve/testUnion/testUnion.c",
-                "${workspaceFolder}/imporve/testFile/testFile.c",
-                "${workspaceFolder}/imporve/typedefTest/testTypedef.c",
-                "-o",
-                "${workspaceFolder}/a.out"
-            ],
-            "options": {
-                "cwd": "/usr/bin"
-            },
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        },
-        {
-            "type": "shell",
-            "label": "gcc build active file",
-            "command": "/usr/bin/gcc",
-            "args": [
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
-            ],
-            "options": {
-                "cwd": "/usr/bin"
-            }
-        }
-    ],
-    "version": "2.0.0"
+  // See https://go.microsoft.com/fwlink/?LinkId=733558 
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "clang++ build active file",
+      "command": "/usr/bin/clang++",
+      "args": [
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}"
+      ],
+      "options": {
+        "cwd": "/usr/bin"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
 }

@@ -1,19 +1,19 @@
 #include <stdio.h> //是预处理器指令，告诉 C 编译器在实际编译之前要包含 stdio.h 文件。
 #include <float.h>
 #include <stdlib.h>
-#include "imporve/testArray/cycle.h"
-#include "imporve/socketClients/socketclient.h"
-#include "imporve/chooseSort/chooseSort.h"
-#include "imporve/testVariables/testVariable.h"
-#include "imporve/testStatic/testStatic.h"
-#include "imporve/testPointer/testPointer.h"
-#include "imporve/testConstant/testConstant.h"
-#include "imporve/testArray/testArray.h"
-#include "imporve/testChar/testChar.h"
-#include "imporve/testStruct/testStruct.h"
-#include "imporve/testUnion/testUnion.h"
-#include "imporve/testFile/testFile.h"
-#include "imporve/typedefTest/testTypedef.h"
+// #include "imporve/testArray/cycle.h"
+// #include "imporve/socketClients/socketclient.h"
+// #include "imporve/chooseSort/chooseSort.h"
+// #include "imporve/testVariables/testVariable.h"
+// #include "imporve/testStatic/testStatic.h"
+// #include "imporve/testPointer/testPointer.h"
+// #include "imporve/testConstant/testConstant.h"
+// #include "imporve/testArray/testArray.h"
+// #include "imporve/testChar/testChar.h"
+// #include "imporve/testStruct/testStruct.h"
+// #include "imporve/testUnion/testUnion.h"
+// #include "imporve/testFile/testFile.h"
+// #include "imporve/typedefTest/testTypedef.h"
 
 // 变量声明
 extern int a, b;
@@ -86,14 +86,14 @@ int main(int argc, char **argv)
     //    fun();
     //    testSizeOf();
     /* this is my first c program */
-    //    printf("Hello, World! \n");
+       printf("Hello, World! \n");
     //    testExtern();
     //    testCharacter();
     //    testConst();
     // testChars();
 
         // testUnions();
-        testFiles();
+        // testFiles();
         // testDefine();
 
     return 0;
