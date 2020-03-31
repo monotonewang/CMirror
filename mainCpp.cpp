@@ -1,9 +1,9 @@
 
-////
 //// Created by wang on 2018/7/6.
-////
-//
+
 #include <iostream>
+#include <ctime>
+#include <cstdlib>
 
 using namespace std;
 
@@ -14,15 +14,38 @@ int main() {
     cout << "Welcome to C++!" << endl;
 
     getYear();
+    char te='\0';
+    cout << te << endl;
+    auto f=3.14;      //double 声明变量时根据初始化表达式自动推断该变量的类型、声明函数时函数返回值的占位符。
+    cout <<"the f value is="<< f << endl;
 
+    // 设置种子
+    srand( (unsigned)time( NULL ) );
+    cout <<"随机数： " << rand() << endl; 
+    double balance[5] = {1000.0, 2.0, 3.4, 7.0, 50.0};
+    cout <<"balance " << balance[0] <<"address="<< &balance[0]<< endl; 
+    time_t now = time(0);
+    clock_t nowc = clock();
+     // 把 now 转换为字符串形式
+    char* dt = ctime(&now);
+ 
+    cout << "clock_t=" << nowc << endl;
+    cout << "本地日期和时间：" << dt << endl;
+    // 把 now 转换为 tm 结构
+    tm *gmtm = gmtime(&now);
+    dt = asctime(gmtm);
+    cout << "UTC 日期和时间："<< dt << endl;
+
+    char str[] = "Unable to read....";
+ 
+    cerr << "Error message : " << str << endl;
 
     return 0;
 }
 
 void getYear(){
     //获取闰年
-
- int year = 2020;
+  int year=2020;
   for (int i = 1990; i < year; i++) {
         if ((i % 4 == 0 && i % 100 != 0) || (i % 400 == 0)) {
             cout << i << " is leap year" << endl;
