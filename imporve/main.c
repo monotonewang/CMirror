@@ -4,7 +4,8 @@
 // #include "imporve/testArray/cycle.h"
 // #include "imporve/socketClients/socketclient.h"
 // #include "imporve/chooseSort/chooseSort.h"
-// #include "imporve/testVariables/testVariable.h"
+#include "imporve/testVariables/testVariable.h"
+#include "test.h"
 // #include "imporve/testStatic/testStatic.h"
 // #include "imporve/testPointer/testPointer.h"
 // #include "imporve/testConstant/testConstant.h"
@@ -27,6 +28,7 @@ extern float f;
 void testCharacter();
 
 void testConst();
+void testC();
 
 int main(int argc, char **argv)
 {
@@ -95,6 +97,8 @@ int main(int argc, char **argv)
         // testUnions();
         // testFiles();
         // testDefine();
+        // testVariable();
+        testC();
 
     return 0;
 }

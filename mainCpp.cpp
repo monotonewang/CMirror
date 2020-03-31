@@ -7,34 +7,28 @@
 
 using namespace std;
 
+void getYear();
+
 int main() {
     cout << "Hello!" << endl;
     cout << "Welcome to C++!" << endl;
-    //    cout << "Hello, World!" ;
-//    printf("hello C++");
-//    testChar();
-//    testType();
-//    testEnum(2);
-//    testExtern();
-//    testNumber();
-//    testDefine();
-//    testConst();
-//    testSign();
-//    testNamespace();
 
+    getYear();
 
-    //获取闰年
-    int year = 2050;
-
-    for (int i = 0; i < year; i++) {
-        if (i % 4 == 0 && i % 100 != 0 || (i % 400 == 0)) {
-            cout << i << " is leap year" << endl;
-        }
-    }
 
     return 0;
 }
 
+void getYear(){
+    //获取闰年
+
+ int year = 2020;
+  for (int i = 1990; i < year; i++) {
+        if ((i % 4 == 0 && i % 100 != 0) || (i % 400 == 0)) {
+            cout << i << " is leap year" << endl;
+        }
+    }
+}
 
 
 
