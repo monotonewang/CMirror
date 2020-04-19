@@ -83,3 +83,92 @@
         }
     ]
 }
+
+## C++关键字
+asm 
+auto
+bool
+break
+case 
+catch
+char
+class
+const
+const_cast
+continue
+default
+delete
+do
+double
+dynamic_cast
+else
+enum
+explicit
+export
+extern
+false
+float
+for
+friend
+goto
+if
+inline
+int
+long
+mutable
+namespace
+new
+operator
+private
+protected
+public
+register
+reinterpret_cast
+return
+short
+signed
+sizeof
+static
+static_cast
+struct
+switch
+template
+this
+throw
+true
+try
+typedef
+typeid
+typename
+union
+unsigned
+using
+virtual
+void
+volatile
+wchat_t
+while
+
+## 基本数据类型
+long 1 false true
+char 1 -128-127
+signedchar 1 -128-127
+unsigned char 1 0-255
+short 2 -32768-32767
+unsined short 2 0-65536
+int 4 
+unsigned int
+long 
+unsigned long
+float 
+double 8
+long double 8
+
+## I/O格式控制
+dec 数值采用十进制
+hex  数值采用十六进制
+oct  数值采用八进制
+ws  提取空白符
+endl  插入换行符，并刷新流
+setsprecision(int) 设置浮点数的小数位数
+setw(int) 设置域宽

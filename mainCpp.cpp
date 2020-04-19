@@ -4,207 +4,171 @@
 ////
 //
 #include <iostream>
+#include <math.h>       /* cos */
+#include <iomanip>
 
 using namespace std;
 
-int main() {
-    cout << "Hello!" << endl;
-    cout << "Welcome to C++!" << endl;
-    //    cout << "Hello, World!" ;
-//    printf("hello C++");
-//    testChar();
-//    testType();
-//    testEnum(2);
-//    testExtern();
-//    testNumber();
-//    testDefine();
-//    testConst();
-//    testSign();
-//    testNamespace();
+void getLeanYear();
+void checkInput();
+void testEnum();
 
+//start clock
+class Clock{
+    //下面是内联函数的隐式声明
+    public:
+        Clock ();//系统默认生成构造函数
+        Clock (int newH=0,int newM=0,int newS=0);
+        void setTime(int newH=0,int newM=0,int newS=0);
+        void showTime();
+        int getHour();
+        Clock(Clock &c);//复制构造函数
+        // ~Clock();//空析构函数 类似java finalize
+    private:
+        int hour,minute,second;
+};
+Clock::Clock(Clock &c){//复制构造函数实现
+    hour=c.hour+1;
+    minute=c.minute+2;
+    second=c.second+3;
+    cout << "call Clock copy function" << endl;
+}
+Clock::Clock (int newH,int newM,int newS){
+    hour=newH;
+    minute=newM;
+    second=newS;
+}
+//Clock成员函数的实现
+void Clock::setTime(int newH,int newM,int newS){
+    hour=newH;
+    minute=newM;
+    second=newS;
+}
+void getClockHour(Clock c){
+        cout << "c hour value"<<c.getHour() << endl;
+}
+Clock getClock(){
+    Clock c(1,3,4);
+    return c;
+}
+int Clock::getHour(){
+    return hour;
+}
+inline void Clock::showTime(){
+    cout<<hour<<":"<<minute<<":"<<second<<endl;
+}
 
-    //获取闰年
-    int year = 2050;
-
-    for (int i = 0; i < year; i++) {
-        if (i % 4 == 0 && i % 100 != 0 || (i % 400 == 0)) {
-            cout << i << " is leap year" << endl;
-        }
+//end clock
+class DailySuppily{
+    public:
+        DailySuppily(Clock clock);
+        DailySuppily(DailySuppily &ds);
+        int getDailySuppilyNums();
+    private:
+        Clock c1;
+        int nums;
+   
+};
+ DailySuppily::DailySuppily(Clock c1):c1(c1){//组合类构造函数
+        cout<<"DailySuppily 组合类构造函数c1.getHour()="<<c1.getHour()<<endl;;
+        int hour=static_cast<int>(c1.getHour()*2);
+        nums=hour;
+        // cout<<"DailySuppily 组合类构造函数nums="<<nums<<endl;;
     }
+    DailySuppily::DailySuppily(DailySuppily &ds):c1(ds.c1){//组合类复制函数
+        cout<<"DailySuppily 组合类复制函数"<<endl;;
+        nums=ds.nums;
+    }
+int DailySuppily::getDailySuppilyNums(){
+    return nums;
+}
 
-    return 0;
+//内联行数不是在调用的时候发生转移，而是在编译的时候将函数体嵌入到调用处，结构简单
+inline double calArea(double radius){
+    return M_PI*radius*radius;
+}
+//带默认参数的函数
+int add(int x=5,int y=6){
+    return x+y;
+}
+int add(int x=5,int y=6,int z=1){
+    return x+y+z;
+}
+void testClock(){
+    Clock mClock(2,3,4);
+    Clock mClock2(mClock);
+    getClockHour(mClock2);//对象2作为形参，第二次调用复制函数
+    mClock2=getClock();
+    cout<<mClock2.getHour()<<endl;//函数返回值是类对象。函数返回，调用复制构造函数 注 不同编译器效果不一致
+    mClock2.showTime();
+    // mClock.setTime();
+    mClock.showTime();
+    cout<<"mClock.getHour()"<<mClock.getHour()<<endl;//函数返回值是类对象。函数返回，调用复制构造函数 注 不同编译器效果不一致
+    DailySuppily ds(mClock);
+    DailySuppily ds2(ds);
+    cout<<"DailySuppily 组合类复制函数"<<ds.getDailySuppilyNums()<<endl;;
+    cout<<"DailySuppily 组合类复制函数2="<<ds2.getDailySuppilyNums()<<endl;;
 }
 
 
+int main() {
+    testClock();
+    cout << "Hello!" << endl;
+    cout << "Welcome to C++!" << endl;
+    //    cout << "Hello, World!" ;
+    short a=1;
+    // cin>>a;//用户输入a的值，相对于java Scanner
+    // cout <<a++<< endl;
+    cout <<"a="<<++a<< endl;
+    cout <<sizeof(a)<<endl;//返回的是a在内存中所占用的字节数
+    bool b1=a;
+    cout <<b1<< endl;//返回的是1,可以将short转bool
+    float f1=M_PI;
+    int i1=int(f1);//c++显式风格装换数据类型
+    // int i1=(int)f1;//c显式风格装换数据类型 这里只做介绍。
+    cout <<i1<< endl;
+    cout<<setw(5)<<setprecision(20)<<M_PI<<endl;
 
+    cout<<"calArea="<<calArea(2)<<endl;
+    cout<<"add="<<add(3,1,2)<<endl;
 
-// void testChar();
+    getLeanYear();
+    // checkInput();
+    testEnum();
+    return 0;
+}
 
-// void testType();
+void getLeanYear(){
+    // for (int i = 0,j=0; i < 2020,j<2020; i++,j++) {
+    // }
+    //获取闰年
+    int year = 2030;
 
-// void testEnum(int i);
+   for (int i = 1990; i < year; i++) {
+        if ((i % 4 == 0 && i % 100 != 0) || (i % 400 == 0)) {
+            cout << i << " is leap year" << endl;
+        }
+    }
+}
 
-// void testExtern();
+void checkInput(){
+    int i=0,j=0,n;
+    cout<<"please input some number, 0 exit"<<endl;
+    cin>>n;
+    while(n!=0){
+        if(n>0){
+            i++;
+        }
+        if(n<0){
+            j++;
+        }
+        cin>>n;
+    }
+     cout << "i="<<i << "j="<<j << endl;
+}
 
-// void testNumber();
+void testEnum(){
+    enum WeekDay{SUN,MON,TUE=7};//初始值 0
 
-// void testDefine();
-
-// void testConst();
-
-// void testSign();
-
-// void testNamespace();
-
-// // 变量声明
-// extern int a, b;
-// extern int c;
-// extern float f;
-
-
-// /**
-//  * 命名空间
-//  */
-// void testNamespace() {
-// //    namespace Li=;
-// //    {
-// //        int flag = 1;
-// //    }
-// //    namespace Ming=;{
-// //        bool flag = true;
-// //    }
-// }
-
-// void testSign() {
-//     short int i;           // 有符号短整数
-//     short unsigned int j;  // 无符号短整数
-
-//     j = 50000;
-
-//     i = j;
-//     cout << i << " " << j;
-
-//     return;
-// }
-
-// void testConst() {
-//     const int NUM = 10;
-//     cout << NUM;
-// }
-
-// void testDefine() {
-//     int area;
-
-//     // 预处理器
-// #define LENGTH 10
-// #define WIDTH  5
-// #define NEWLINE '\n'
-
-//     area = LENGTH * WIDTH;
-//     cout << area;
-//     cout << NEWLINE;
-//     return;
-// }
-
-// void testNumber() {
-//     int a = 85;// 十进制
-//     int b = 0213;// 八进制
-//     int c = 0x4b;   // 十六进制
-//     int d = 30; // 整数
-//     int e = 30u;// 无符号整数
-//     int f = 30l; // 长整数
-//     int g = 30ul;// 无符号长整数
-// //    浮点常量由整数部分、小数点、小数部分和指数部分组成。您可以使用小数形式或者指数形式来表示浮点常量。
-// //    当使用小数形式表示时，必须包含整数部分、小数部分，或同时包含两者。当使用指数形式表示时， 必须包含小数点、指数，或同时包含两者。带符号的指数是用 e 或 E 引入的。
-// //    下面列举几个浮点常量的实例：
-//     double h = 3.14159;       // 合法的
-//     double i = (double) 314159E-5L;    // 合法的
-//     bool j = true;
-//     cout << "testConst--a=" << a << endl;
-//     cout << "testConst--b=" << b << endl;
-//     cout << "testConst--c=" << c << endl;
-//     cout << "testConst--d=" << d << endl;
-//     cout << "testConst--e=" << e << endl;
-//     cout << "testConst--f=" << f << endl;
-//     cout << "testConst--g=" << g << endl;
-//     cout << "testConst--h=" << h << endl;
-//     cout << "testConst--i=\t" << i << endl;
-//     cout << "testConst--j=\r" << j << endl;
-//     cout << "\\" << endl;
-//     cout << "\"" << endl;
-//     cout << "\'" << endl;
-//     cout << "\?" << endl;
-// //    cout << "\a" <<  endl;
-// //    cout << "\b" <<  endl;
-// //    cout << "\f" <<  endl;
-// //    cout << "\n" <<  endl;
-// //    cout << "\r" <<  endl;
-// //    cout << "\t" <<  endl;
-// //    cout << "\v" <<  endl;
-// //    cout << "\000" <<  endl;
-// //    cout << "\xhh" <<  endl;
-// }
-
-// void testExtern() {
-//     // 变量定义
-//     int a, b;
-//     int c;
-//     float f;
-//     int x = 10;
-//     // 实际初始化
-//     a = 10;
-//     b = 20;
-//     c = a + b;
-//     cout << "testExtern--c=" << c << endl;
-
-//     f = (float) (70.0 / 3.0);
-//     cout << "testExtern--f=" << f << endl;
-// }
-
-// void testType() {
-//     typedef int feet;//define type feet to int
-//     feet distance = 1;
-//     cout << "distance:" << distance << endl;
-// }
-
-// /**
-//  * enum
-//  * @param i
-//  */
-// void testEnum(int i) {
-//     if (i == 1) {
-//         enum color {
-//             red, green, blue
-//         } c1;
-//         c1 = blue;
-//         cout << "c1:" << c1 << endl;
-//         return;
-//     } else {
-//         enum color {
-//             red, green = 5, blue
-//         } c2;
-//         c2 = blue;
-//         cout << "c2:" << c2 << endl;
-//         return;
-//     }
-// }
-
-// /**
-//  * get sizeOf char int ...
-//  */
-// void testChar() {
-//     cout << "size of char:" << sizeof(char) << endl;
-//     cout << "Size of int : " << sizeof(int) << endl;
-//     cout << "Size of short int : " << sizeof(short int) << endl;
-//     cout << "Size of long int : " << sizeof(long int) << endl;
-//     cout << "Size of float : " << sizeof(float) << endl;
-//     cout << "Size of double : " << sizeof(double) << endl;
-//     cout << "Size of wchar_t : " << sizeof(wchar_t) << endl;
-// }
-
-//#include <iostream>
-//
-//int main() {
-//    std::cout << "Hello, World!" << std::endl;
-//    return 0;
-//}
+    cout << "SUN="<<SUN << "TUE="<<TUE << endl;
+}
