@@ -172,3 +172,6 @@ ws  提取空白符
 endl  插入换行符，并刷新流
 setsprecision(int) 设置浮点数的小数位数
 setw(int) 设置域宽
+
+
+"${workspaceFolder}/${fileBasenameNoExtension}"
