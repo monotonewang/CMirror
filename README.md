@@ -1,5 +1,6 @@
+clang官网:https://clang.llvm.org/
 
-
+task.json
   "${workspaceFolder}/main.c",
                 "${workspaceFolder}/imporve/testArray/testArray.c",
                 "${workspaceFolder}/imporve/testVariables/testVariable.c",
@@ -191,3 +192,6 @@ long unsigned long
 
 char int 
 %mc %m.ns
+  "${workspaceFolder}/imporve/testArray/testArray.c",
+  
+https://www.runoob.com/cplusplus/cpp-variable-types.html

@@ -47,7 +47,7 @@ void testStorage()
     //当您使用 'extern' 时，对于无法初始化的变量，会把变量名指向一个之前定义过的存储位置
     extern void write_extern();
 
-    extern void num;
+    // extern void num;
 }
 
 /* 算术运算符*/
