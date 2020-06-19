@@ -13,6 +13,7 @@
         "-g",
         "${workspaceFolder}/mainCpp.cpp",
         "${workspaceFolder}/Point.cpp",
+        // "${workspaceFolder}/circle.c",
         "-o",
         "${workspaceFolder}/a.out"
       ],

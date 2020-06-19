@@ -175,3 +175,19 @@ setw(int) 设置域宽
 
 
 "${workspaceFolder}/${fileBasenameNoExtension}"
+
+## 输出格式
+char int unsigned
+%md 
+%mo
+%mx
+%mu
+
+long unsigned long
+%mld %mlo %mlx
+
+long unsigned long
+%mlu %m.nf %m.ne %g
+
+char int 
+%mc %m.ns
