@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		572FA3C4249CF89900D64798 /* array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 572FA3C2249CF89900D64798 /* array.cpp */; };
+		572FA3C7249E090400D64798 /* point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 572FA3C5249E090400D64798 /* point.cpp */; };
+		573473B5249F0F18001819F4 /* testStruct.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 573473B3249F0F18001819F4 /* testStruct.cpp */; };
+		573473B8249F5480001819F4 /* tClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 573473B6249F5480001819F4 /* tClass.cpp */; };
+		573473BB249F550A001819F4 /* tBasic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 573473B9249F550A001819F4 /* tBasic.cpp */; };
 		574EC873249CB3450089EE52 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 574EC872249CB3450089EE52 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +28,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		572FA3C2249CF89900D64798 /* array.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = array.cpp; sourceTree = "<group>"; };
+		572FA3C3249CF89900D64798 /* array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = array.hpp; sourceTree = "<group>"; };
+		572FA3C5249E090400D64798 /* point.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = point.cpp; sourceTree = "<group>"; };
+		572FA3C6249E090400D64798 /* point.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = point.hpp; sourceTree = "<group>"; };
+		573473B3249F0F18001819F4 /* testStruct.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = testStruct.cpp; sourceTree = "<group>"; };
+		573473B4249F0F18001819F4 /* testStruct.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = testStruct.hpp; sourceTree = "<group>"; };
+		573473B6249F5480001819F4 /* tClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tClass.cpp; sourceTree = "<group>"; };
+		573473B7249F5480001819F4 /* tClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tClass.hpp; sourceTree = "<group>"; };
+		573473B9249F550A001819F4 /* tBasic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tBasic.cpp; sourceTree = "<group>"; };
+		573473BA249F550A001819F4 /* tBasic.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tBasic.hpp; sourceTree = "<group>"; };
 		574EC86F249CB3450089EE52 /* CMirrorXCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CMirrorXCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		574EC872249CB3450089EE52 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +73,16 @@
 			isa = PBXGroup;
 			children = (
 				574EC872249CB3450089EE52 /* main.cpp */,
+				572FA3C2249CF89900D64798 /* array.cpp */,
+				572FA3C3249CF89900D64798 /* array.hpp */,
+				572FA3C5249E090400D64798 /* point.cpp */,
+				572FA3C6249E090400D64798 /* point.hpp */,
+				573473B3249F0F18001819F4 /* testStruct.cpp */,
+				573473B4249F0F18001819F4 /* testStruct.hpp */,
+				573473B6249F5480001819F4 /* tClass.cpp */,
+				573473B7249F5480001819F4 /* tClass.hpp */,
+				573473B9249F550A001819F4 /* tBasic.cpp */,
+				573473BA249F550A001819F4 /* tBasic.hpp */,
 			);
 			path = CMirrorXCode;
 			sourceTree = "<group>";
@@ -118,6 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				573473B8249F5480001819F4 /* tClass.cpp in Sources */,
+				573473B5249F0F18001819F4 /* testStruct.cpp in Sources */,
+				572FA3C7249E090400D64798 /* point.cpp in Sources */,
+				573473BB249F550A001819F4 /* tBasic.cpp in Sources */,
+				572FA3C4249CF89900D64798 /* array.cpp in Sources */,
 				574EC873249CB3450089EE52 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

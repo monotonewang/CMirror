@@ -35,7 +35,11 @@
 #include <iostream>
 #include <math.h>       /* cos */
 #include <iomanip>
-// #include "Point.h"
+#include "array.hpp"
+#include "point.hpp"
+#include "testStruct.hpp"
+#include "tClass.hpp"
+#include "tBasic.hpp"
 
 using namespace std;
 
@@ -245,8 +249,8 @@ void testString(){
     cout << "strcat( str1, str2): " << str1 << endl;
     
     // 连接后，str1 的总长度
-    len = strlen(str1);
-    cout << "strlen(str1) : " << len << endl;
+//    len = strlen(str1);
+//    cout << "strlen(str1) : " << len << endl;
 }
 void testTime(){
     // 基于当前系统的当前日期/时间
@@ -263,37 +267,66 @@ void testTime(){
     cout << "UTC 日期和时间："<< dt << endl;
 }
 
+bool isOutPut=false;
+
 int main() {
-    testClock();
-    testSrand();
-    testString();
-    testTime();
+    if(isOutPut){
+        // Point point(3,4);
+        // Point::showCount();
+
+        //    cout << "Hello, World!" ;
+        short a=1;
+        // cin>>a;//用户输入a的值，相对于java Scanner
+        // cout <<a++<< endl;
+        cout <<"a="<<++a<< endl;
+        cout <<sizeof(a)<<endl;//返回的是a在内存中所占用的字节数
+        bool b1=a;
+        cout <<b1<< endl;//返回的是1,可以将short转bool
+        float f1=M_PI;
+        int i1=int(f1);//c++显式风格装换数据类型
+        // int i1=(int)f1;//c显式风格装换数据类型 这里只做介绍。
+        cout <<i1<< endl;
+        cout<<setw(5)<<setprecision(20)<<M_PI<<endl;
+
+        cout<<"calArea="<<calArea(2)<<endl;
+        cout<<"add="<<add(3,1,2)<<endl;
+
+        // checkInput();
+        testEnum();
+        getLeanYear();
+        testClock();
+        testSrand();
+        testString();
+        testTime();
+        arrayPrint();
+        arrayFindMax();
+        arraySwap();
+        pointTest();
+        //    swap1(20,10);
+        long a1=20;
+        long b2=10;
+        pointSwap(&a1,&b2);
+        bubbleSort();
+        testStructStudent();
+        testStructNest();
+        cout << "swap01 after a(0) := "<<a1 << endl;
+        cout << "swap01 after b(0) := "<<b2 << endl;
+    long a3=20;
+    long b3=10;
     
-    // Point point(3,4);
-    // Point::showCount();
+    cout << "pointSwap2 before a3= "<<a3 << endl;
+    cout << "pointSwap2 before b3= "<<b3 << endl;
     
-    cout << "Hello!" << endl;
-    cout << "Welcome to C++!" << endl;
-    //    cout << "Hello, World!" ;
-    short a=1;
-    // cin>>a;//用户输入a的值，相对于java Scanner
-    // cout <<a++<< endl;
-    cout <<"a="<<++a<< endl;
-    cout <<sizeof(a)<<endl;//返回的是a在内存中所占用的字节数
-    bool b1=a;
-    cout <<b1<< endl;//返回的是1,可以将short转bool
-    float f1=M_PI;
-    int i1=int(f1);//c++显式风格装换数据类型
-    // int i1=(int)f1;//c显式风格装换数据类型 这里只做介绍。
-    cout <<i1<< endl;
-    cout<<setw(5)<<setprecision(20)<<M_PI<<endl;
+    pointSwap2(a3,b3);
+    cout << "pointSwap2 after a3= "<<a3 << endl;
+    cout << "pointSwap2 after b3= "<<b3 << endl;
     
-    cout<<"calArea="<<calArea(2)<<endl;
-    cout<<"add="<<add(3,1,2)<<endl;
-    
-    getLeanYear();
-    // checkInput();
-    testEnum();
+    }
+ 
+    tClassBasic();
+//    pointVariable();
+//    tBasicInfo();
+
     return 0;
 }
 
