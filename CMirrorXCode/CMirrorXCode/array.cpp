@@ -66,3 +66,25 @@ void arraySwap(){
     }
     cout << "swap array end" << endl;
 }
+
+void arrayTwoDimension(){
+    int array[2][3]={
+        {1,2,3},
+        {3,4,5}
+    };
+    cout << "arrayTwoDimension start" << endl;
+    int length=sizeof(array);
+    int length2=sizeof(array[0]);
+    int length3=sizeof(array[0][1]);
+    int first=length/length2;
+    int second=length2/length3;
+    cout << "arrayTwoDimension start" <<length<<"length2="<<length2<<"length3="<<length3<< endl;
+    cout << "arrayTwoDimension first=" <<first<< endl;
+    cout << "arrayTwoDimension second=" <<second<< endl;
+    
+    for(int i=0;i<first;i++){
+        for(int j=0;j<length2/length3;j++){
+            cout << "arrayTwoDimension["<<i<<"]["<<j<<"]="<<array[i][j]<< endl;
+        }
+    }
+}

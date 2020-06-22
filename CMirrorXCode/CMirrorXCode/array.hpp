@@ -16,5 +16,6 @@ using namespace std;
 void arrayPrint();
 void arrayFindMax();
 void arraySwap();
+void arrayTwoDimension();
 
 #endif /* array_hpp */
