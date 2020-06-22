@@ -6,7 +6,7 @@
 //  Copyright © 2020 fu qingwang. All rights reserved.
 //
 
-#include "testStruct.hpp"
+#include "tStruct.hpp"
 
 struct  People {
     string firstname;

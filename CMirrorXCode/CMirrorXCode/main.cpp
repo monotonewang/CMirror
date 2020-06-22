@@ -35,9 +35,9 @@
 #include <iostream>
 
 #include <iomanip>
-#include "array.hpp"
-#include "point.hpp"
-#include "testStruct.hpp"
+#include "tArray.hpp"
+#include "tPoint.hpp"
+#include "tStruct.hpp"
 #include "tClass.hpp"
 #include "tBasic.hpp"
 

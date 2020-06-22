@@ -6,8 +6,8 @@
 //  Copyright © 2020 fu qingwang. All rights reserved.
 //
 
-#ifndef testStruct_hpp
-#define testStruct_hpp
+#ifndef tStruct_hpp
+#define tStruct_hpp
 
 #include <stdio.h>
 #include <iostream>

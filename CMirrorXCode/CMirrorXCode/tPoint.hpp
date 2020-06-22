@@ -6,8 +6,8 @@
 //  Copyright © 2020 fu qingwang. All rights reserved.
 //
 
-#ifndef point_hpp
-#define point_hpp
+#ifndef tPoint_hpp
+#define tPoint_hpp
 
 #include <stdio.h>
 #include <iostream>

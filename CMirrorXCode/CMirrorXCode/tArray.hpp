@@ -6,8 +6,8 @@
 //  Copyright © 2020 fu qingwang. All rights reserved.
 //
 
-#ifndef array_hpp
-#define array_hpp
+#ifndef tArray_hpp
+#define tArray_hpp
 
 #include <iostream>
 #include <stdio.h>

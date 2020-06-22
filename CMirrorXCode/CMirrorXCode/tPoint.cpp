@@ -6,7 +6,7 @@
 //  Copyright © 2020 fu qingwang. All rights reserved.
 //
 
-#include "point.hpp"
+#include "tPoint.hpp"
 
 void pointTest(){
     int *p=NULL;

@@ -6,7 +6,7 @@
 //  Copyright © 2020 fu qingwang. All rights reserved.
 //
 
-#include "array.hpp"
+#include "tArray.hpp"
 
 /*
  打印数组
