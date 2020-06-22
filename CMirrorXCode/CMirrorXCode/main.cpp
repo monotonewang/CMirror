@@ -28,7 +28,7 @@
 //      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        //
 //         佛祖保佑       永无BUG     永不修改                       //
 ////////////////////////////////////////////////////////////////////
-// ————————————————
+
 // 版权声明：本文为CSDN博主「欧阳鹏」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
 // 原文链接：https://blog.csdn.net/ouyang_peng/java/article/details/51803181
 
@@ -49,10 +49,6 @@ int main() {
     if(isOutPut){
         // Point point(3,4);
         // Point::showCount();
-
-        //    cout << "Hello, World!" ;
-      
-
         // checkInput();
         testEnum();
         getLeanYear();
