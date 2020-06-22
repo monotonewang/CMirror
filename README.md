@@ -1,3 +1,5 @@
+CMirrorXCode里面是Xcode的c++项目示例
+
 clang官网:https://clang.llvm.org/
 
 task.json
