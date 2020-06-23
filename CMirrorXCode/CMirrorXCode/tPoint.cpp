@@ -104,3 +104,38 @@ void pointSwap2(long &a,long &b){
     a=b;
     b=temp;
 }
+
+//常量引用
+void funConst2(int &v){
+    //    int &f1=10; //error
+    
+    //等价于
+    //int temp=10
+    //const int &f=temp;
+    const int &f=10;//只读，不可以修改
+    v=1000;
+    cout << "funConst-->p2= "<<v<< endl;
+}
+
+//常量引用
+void funConst3(int const &v){
+    //    int &f1=10; //error
+    
+    //等价于
+    //int temp=10
+    //const int &f=temp;
+    const int &f=10;//只读，不可以修改
+//    v=1000;//只读，不可以修改
+    cout << "funConst3-->v= "<<v<< endl;
+}
+//常量指针
+void funConst(int const *v){
+//    int &f1=10; //error
+    
+    //等价于
+    //int temp=10
+    //const int &f=temp;
+    const int &f=10;//只读，不可以修改
+    
+    cout << "funConst-->v= "<<v<< endl;
+}

@@ -13,6 +13,7 @@
 		573473B8249F5480001819F4 /* tClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 573473B6249F5480001819F4 /* tClass.cpp */; };
 		573473BB249F550A001819F4 /* tBasic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 573473B9249F550A001819F4 /* tBasic.cpp */; };
 		574EC873249CB3450089EE52 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 574EC872249CB3450089EE52 /* main.cpp */; };
+		57515C6624A2255A0068DAAA /* tFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57515C6424A2255A0068DAAA /* tFunc.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		573473BA249F550A001819F4 /* tBasic.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tBasic.hpp; sourceTree = "<group>"; };
 		574EC86F249CB3450089EE52 /* CMirrorXCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CMirrorXCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		574EC872249CB3450089EE52 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		57515C6424A2255A0068DAAA /* tFunc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tFunc.cpp; sourceTree = "<group>"; };
+		57515C6524A2255A0068DAAA /* tFunc.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tFunc.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				573473B7249F5480001819F4 /* tClass.hpp */,
 				573473B9249F550A001819F4 /* tBasic.cpp */,
 				573473BA249F550A001819F4 /* tBasic.hpp */,
+				57515C6424A2255A0068DAAA /* tFunc.cpp */,
+				57515C6524A2255A0068DAAA /* tFunc.hpp */,
 			);
 			path = CMirrorXCode;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57515C6624A2255A0068DAAA /* tFunc.cpp in Sources */,
 				573473B8249F5480001819F4 /* tClass.cpp in Sources */,
 				573473B5249F0F18001819F4 /* tStruct.cpp in Sources */,
 				572FA3C7249E090400D64798 /* tPoint.cpp in Sources */,

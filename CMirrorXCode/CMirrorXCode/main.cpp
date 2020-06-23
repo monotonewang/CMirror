@@ -40,6 +40,7 @@
 #include "tStruct.hpp"
 #include "tClass.hpp"
 #include "tBasic.hpp"
+#include "tFunc.hpp"
 
 using namespace std;
 
@@ -75,12 +76,19 @@ int main() {
     cout << "pointSwap2 before a3= "<<a3 << endl;
     cout << "pointSwap2 before b3= "<<b3 << endl;
     
+    
     pointSwap2(a3,b3);
     cout << "pointSwap2 after a3= "<<a3 << endl;
     cout << "pointSwap2 after b3= "<<b3 << endl;
     
     }
-    arrayTwoDimension();
+//    int a=10;
+//    funConst2(a);
+//    funConst3(a);
+    tFuncDefault(15,21);
+    tFuncDefault(15);
+    tFuncPlace(10,20);
+//    arrayTwoDimension();
 //    tClassBasic();
 //    pointVariable();
 //    tBasicInfo();

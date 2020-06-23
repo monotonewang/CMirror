@@ -25,4 +25,10 @@ void pointVariable();
 
 int * func(int b);
 
+void funConst(int const *v);
+
+void funConst2(int &v);
+
+void funConst3(int const &v);
+
 #endif /* point_hpp */
