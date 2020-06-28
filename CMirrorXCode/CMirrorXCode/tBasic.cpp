@@ -85,9 +85,9 @@ void testString(){
     strcat( str1, str2);
     cout << "strcat( str1, str2): " << str1 << endl;
     
-    // 连接后，str1 的总长度
-    //    len = strlen(str1);
-    //    cout << "strlen(str1) : " << len << endl;
+//     连接后，str1 的总长度
+    len = strlen(str1);
+    cout << "strlen(str1) : " << len << endl;
 }
 
 void tBasicInfo(){

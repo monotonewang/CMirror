@@ -29,5 +29,9 @@ void tFuncPlace2(int a,int=10);
 //函数重载
 void tFuncPlace(int a);
 
+void tFuncPlace(int &a);//可读可写
+
+void tFuncPlace(const int &a);//只读
+
 
 #endif /* tFunc_hpp */

@@ -118,6 +118,7 @@ void funConst2(int &v){
 }
 
 //常量引用
+//引用内部实现就是一个指针常量
 void funConst3(int const &v){
     //    int &f1=10; //error
     

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		572FA3C4249CF89900D64798 /* tArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 572FA3C2249CF89900D64798 /* tArray.cpp */; };
 		572FA3C7249E090400D64798 /* tPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 572FA3C5249E090400D64798 /* tPoint.cpp */; };
+		5732ABFA24A6E84A00352B6D /* tClassPerson.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5732ABF824A6E84A00352B6D /* tClassPerson.cpp */; };
+		5732ABFD24A82D5B00352B6D /* tClassPoint2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5732ABFC24A82D5B00352B6D /* tClassPoint2.cpp */; };
 		573473B5249F0F18001819F4 /* tStruct.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 573473B3249F0F18001819F4 /* tStruct.cpp */; };
 		573473B8249F5480001819F4 /* tClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 573473B6249F5480001819F4 /* tClass.cpp */; };
 		573473BB249F550A001819F4 /* tBasic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 573473B9249F550A001819F4 /* tBasic.cpp */; };
@@ -33,6 +35,10 @@
 		572FA3C3249CF89900D64798 /* tArray.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tArray.hpp; sourceTree = "<group>"; };
 		572FA3C5249E090400D64798 /* tPoint.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tPoint.cpp; sourceTree = "<group>"; };
 		572FA3C6249E090400D64798 /* tPoint.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tPoint.hpp; sourceTree = "<group>"; };
+		5732ABF524A5874300352B6D /* tClassPoint.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tClassPoint.hpp; sourceTree = "<group>"; };
+		5732ABF824A6E84A00352B6D /* tClassPerson.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tClassPerson.cpp; sourceTree = "<group>"; };
+		5732ABF924A6E84A00352B6D /* tClassPerson.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tClassPerson.hpp; sourceTree = "<group>"; };
+		5732ABFC24A82D5B00352B6D /* tClassPoint2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tClassPoint2.cpp; sourceTree = "<group>"; };
 		573473B3249F0F18001819F4 /* tStruct.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tStruct.cpp; sourceTree = "<group>"; };
 		573473B4249F0F18001819F4 /* tStruct.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tStruct.hpp; sourceTree = "<group>"; };
 		573473B6249F5480001819F4 /* tClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tClass.cpp; sourceTree = "<group>"; };
@@ -56,6 +62,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5732ABF724A5879700352B6D /* tClass */ = {
+			isa = PBXGroup;
+			children = (
+				5732ABF524A5874300352B6D /* tClassPoint.hpp */,
+				5732ABF824A6E84A00352B6D /* tClassPerson.cpp */,
+				5732ABF924A6E84A00352B6D /* tClassPerson.hpp */,
+				5732ABFC24A82D5B00352B6D /* tClassPoint2.cpp */,
+			);
+			path = tClass;
+			sourceTree = "<group>";
+		};
 		574EC866249CB3450089EE52 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +92,7 @@
 		574EC871249CB3450089EE52 /* CMirrorXCode */ = {
 			isa = PBXGroup;
 			children = (
+				5732ABF724A5879700352B6D /* tClass */,
 				574EC872249CB3450089EE52 /* main.cpp */,
 				572FA3C2249CF89900D64798 /* tArray.cpp */,
 				572FA3C3249CF89900D64798 /* tArray.hpp */,
@@ -150,8 +168,10 @@
 			files = (
 				57515C6624A2255A0068DAAA /* tFunc.cpp in Sources */,
 				573473B8249F5480001819F4 /* tClass.cpp in Sources */,
+				5732ABFD24A82D5B00352B6D /* tClassPoint2.cpp in Sources */,
 				573473B5249F0F18001819F4 /* tStruct.cpp in Sources */,
 				572FA3C7249E090400D64798 /* tPoint.cpp in Sources */,
+				5732ABFA24A6E84A00352B6D /* tClassPerson.cpp in Sources */,
 				573473BB249F550A001819F4 /* tBasic.cpp in Sources */,
 				572FA3C4249CF89900D64798 /* tArray.cpp in Sources */,
 				574EC873249CB3450089EE52 /* main.cpp in Sources */,

@@ -85,9 +85,11 @@ int main() {
 //    int a=10;
 //    funConst2(a);
 //    funConst3(a);
-    tFuncDefault(15,21);
-    tFuncDefault(15);
-    tFuncPlace(10,20);
+    //函数默认参数
+//    tFuncDefault(15,21);
+//    tFuncDefault(15);
+//    tFuncPlace(10,20);
+    getCircleGirth();
 //    arrayTwoDimension();
 //    tClassBasic();
 //    pointVariable();
