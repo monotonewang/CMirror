@@ -35,6 +35,7 @@
 #include <iostream>
 #include <math.h>       /* cos */
 #include <iomanip>
+#include <cstring>
 // #include "Point.h"
 
 using namespace std;
