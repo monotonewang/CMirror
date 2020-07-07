@@ -140,6 +140,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleApplication1.cpp" />
+    <ClCompile Include="tArray.cpp" />
+    <ClCompile Include="tBasic.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="tArray.h" />
+    <ClInclude Include="tBasic.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
